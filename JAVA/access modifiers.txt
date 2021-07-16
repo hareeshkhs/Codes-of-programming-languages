@@ -1,0 +1,58 @@
+(i)Public Access Modifier
+package p1;
+import p2.c2;
+public class c1{
+	public static void main(String args[]) {
+	  c2 ob2 = new c2();
+	  ob2.print();
+  }
+}
+package p2;
+public class c2{
+   public void print() {
+	   System.out.println("Hey Buddy");
+   }
+}
+(ii)Private Access Modifier
+package p1;
+import p2.c2;
+public class c1 extends c2{
+	public static void main(String args[]) {
+	  print();
+  }
+}
+package p2;
+public class c2{
+   private static void print() {
+	   System.out.println("Hey Buddy");
+   }
+}
+ (iii)Protected Access Modifier
+package p1;
+import p2.c2;
+public class c1 extends c2{
+	public static void main(String args[]) {
+	  print();
+  }
+}
+package p2;
+public class c2{
+   protected static void print() {
+	   System.out.println("Hey Buddy");
+   }
+} 
+(iv)Default Access Modifier
+package p1;
+import p2.c2;
+public class c1 extends c2{
+	public static void main(String args[]) {
+	  c2 ob2 = new c2();
+	  ob2.print();
+  }
+}
+package p2;
+public class c2{
+   void print() {
+	   System.out.println("Hey Buddy");
+   }
+}
